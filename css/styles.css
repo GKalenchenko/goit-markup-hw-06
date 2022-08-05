@@ -686,6 +686,7 @@ img {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+
 }
 
 .backdrop {
@@ -713,7 +714,12 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+/*----------- modal form -----------*/
 .modal-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   position: absolute;
   top: 8px;
   right: 8px;
@@ -726,5 +732,131 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: transparent;
+}
 
+.form {
+  padding: 40px 39px;
+}
+
+.modal-title {
+  display: block;
+  font-weight: 700px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  color: var(--primary-color);
+
+  margin-bottom: 12px;
+}
+
+.modal-label {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  margin-bottom: 10px;
+}
+
+.modal-description {
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: var(--secondary-color);
+}
+
+.modal-reg {
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2)
+}
+
+.modal-icon {
+  position: absolute;
+  left: 15px;
+  bottom: 11px;
+
+  color: var(--primary-color);
+}
+
+.modal-textarea {
+  width: 448px;
+  height: 116px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+}
+
+.textarea-description {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: var(--secondary-color);
+}
+
+.modal-textarea::placeholder {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  padding-left: 16px;
+  padding-top: 8px;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.textarea-label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.policy {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.form-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 10px 56px;
+
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--default-white);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.policy-description {
+  user-select: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+
+.policy-description a {
+  color: #2196F3;
+  text-decoration: underline;
 }

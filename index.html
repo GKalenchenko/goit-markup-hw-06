@@ -535,10 +535,42 @@
       </div>
     </footer>
     <!-- Модальное окно  -->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
+        <form class="form">
+          <strong class="modal-title">Оставьте свои данные, мы вам перезвоним</strong>
+          <label class="modal-label">
+            <span class="modal-description">Имя</span>
+            <input class="modal-reg" type="text" />
+            <svg class="modal-icon" width="18px" height="18px">
+              <use href="./projects-icon/icons.svg#modal-person"></use></svg
+          ></label>
+          <label class="modal-label"
+            ><span class="modal-description">Телефон</span>
+            <input class="modal-reg" type="tel" />
+            <svg class="modal-icon" width="18px" height="18px">
+              <use href="./projects-icon/icons.svg#modal-phone"></use></svg
+          ></label>
+          <label class="modal-label"
+            ><span class="modal-description">Почта</span>
+            <input class="modal-reg" type="email" />
+            <svg class="modal-icon" width="18px" height="18px">
+              <use href="./projects-icon/icons.svg#modal-email"></use></svg
+          ></label>
+          <label class="textarea-label"
+            ><span class="textarea-description">Комментарий</span>
+            <textarea class="modal-textarea" placeholder="Введите текст"></textarea>
+          </label>
+          <label class="policy"
+            ><input class="policy-checbox" type="checkbox" />
+            <span class="policy-description"
+              >Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></span
+            >
+          </label>
+          <button class="form-btn" type="submit">Отправить</button>
+        </form>
         <button class="modal-button" data-modal-close>
-          <svg class="modal-btn" width="11" height="11">
+          <svg class="modal-btn" width="18px" height="18px">
             <use href="/projects-icon/icons.svg#icon-close"></use>
           </svg>
         </button>
