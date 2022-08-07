@@ -982,7 +982,7 @@ img {
   background-origin: border-box;
   border-color: var(--accent-color);
   background-color: var(--accent-color);
-  background-image: url(/projects-icon/check.svg);
+  background-image: url(../projects-icon/check.svg);
 }
 
 .policy-checbox {
